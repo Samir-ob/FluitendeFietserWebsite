@@ -1,0 +1,22 @@
+body {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    margin: 0;
+    height: 100vh;
+    padding: none;
+    background-color: #EBECF0;
+}
+main{
+    margin-left: 20px;
+    grid-column: 2;
+    height: 500px;
+}
+main div p{
+    width: 30vh;
+}
+#imageBarImage{
+    float: right;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: 40vh;
+}

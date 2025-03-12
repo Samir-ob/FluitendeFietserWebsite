@@ -1,0 +1,119 @@
+body {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    margin: 0;
+    height: 100vh;
+    padding: none;
+    background-color: #EBECF0;
+}
+
+.pagination{
+    display: grid;
+    background-color: black;
+    height: 100%;
+    width: 14%;
+    padding: 10px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    color: black;
+}
+
+#logo{
+    display: block;
+    border-radius: 150px;
+    height: 100%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar_button{
+    text-decoration: none;
+    padding: 5px;
+    background-color: #fff;
+    color: black;
+    font-size: x-large;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+}
+a:visited{
+    color: black;
+}
+
+header{
+    display: grid;
+    background-color: rgb(173, 216, 230);
+    grid-column: 2;
+    width: 99.81%;
+    height: 110px;
+    min-height: 15vh;
+    border: 1px, solid, black;
+}
+.HeaderContent{
+    margin-left: 10px;
+}
+.HeaderContent h1{
+    text-align: center;
+}
+#headerSearchBar{
+    text-align: right;
+    margin-top: -30px;
+    margin-right: 40px;
+}
+#headerSearchBarImage{
+    display: inline-block;
+    width: 20px;
+    margin-top: 10px;
+    transform: translate(130%,30%);
+}
+#SearchBarInput{
+    padding-left: 25px;
+}
+footer{
+    display: grid;
+    background-color: rgb(173, 216, 230);
+    height: 110px;
+    grid-column: 2;
+    align-self: end; /* aligns it to the bottom */
+    border: 1px, solid, black;
+
+}
+#KVK{
+   display: inline; /* is required to make it alignable */
+   text-align: center;
+   display: inline;
+}
+#FooterLinks{
+   text-align: center;
+}
+#FooterLinks a:visited{
+    color: black;
+}
+#FooterLinks a{
+    color: black;
+}
+#TradeMark{
+    text-align: center;
+}
+/* source: https://stackoverflow.com/questions/41587802/css-animation-from-left-to-right */
+#bicycle {
+    bottom: 0%;
+    position: absolute;
+    animation: linear infinite;
+    animation-name: run;
+    animation-duration: 4s;
+  }
+  @keyframes run {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: ;
+    }
+    100% {
+        left: 100%;
+    }
+  }
