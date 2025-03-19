@@ -18,6 +18,7 @@ body {
     flex-direction: column;
     position: fixed;
     color: black;
+    z-index: 3;
 }
 
 #logo{
@@ -67,7 +68,7 @@ header{
     display: inline-block;
     width: 20px;
     margin-top: 10px;
-    transform: translate(130%,30%);
+    transform: translate(0%,30%);
 }
 #SearchBarInput{
     padding-left: 25px;
