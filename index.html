@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fluitende Fietser</title>
     <link rel="stylesheet" href="style/style-default.css">
     <link rel="stylesheet" href="style/style-homepage.css">
 </head>
 
-<body>
+<body onload="Loaded()">
     <header>
         <div class="HeaderContent">
             <h1>Fluitende fietser</h1>
@@ -37,21 +37,56 @@
             <h2>Welkom bij de fluitende fietser!</h2>
 
 
-            <div id="imageBar">
-                <img id="rightArrow" src="assets/arrow-right.png" onmouseenter="mouseEnter()"
-                    onmouseleave="mouseLeave()">
-                <img class="imageBarImage" src="assets/placeholder.png">
-                <img id="leftArrow" src="assets/arrow-left.png" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">
-                <p class="Openingstijden">Openingstijden:</p>
-                <p class="Openingstijden open">Geopend/gesloten</p>
-                <p class="Openingstijden text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. ?</p>
-            </div>
-            <p id="mainText">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, enim molestias est consequatur esse
-                quidem laboriosam pariatur, quasi deserunt id sequi sit harum ipsam ut odio assumenda beatae vero
-                voluptates.
-            </p>
+            <!--Begin of slideshow-->
+            <div class="slideshow-container">
 
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 5</div>
+                  <img class="slidehsow_Imagecontainer" src="assets/assets-slideshow/sfeer4.jpg" style="width:100%">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 5</div>
+                  <img class="slidehsow_Imagecontainer" src="assets/assets-slideshow/sfeer3.jpg" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 5</div>
+                  <img class="slidehsow_Imagecontainer" src="assets/assets-slideshow/sfeer2.jpg" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img class="slidehsow_Imagecontainer" src="assets/assets-slideshow/sfeer1.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img class="slidehsow_Imagecontainer" src="assets/assets-slideshow/winkel1.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+                <p id="openingstijden">Open/Gesloten</p>
+
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div> <!--End of slideshow-->
+            <p id="mainText">
+                There was no text to load. Make sure to add the desired message within the message.txt file located within the assets folder.
+            </p>
+         
         </div>
 
 
