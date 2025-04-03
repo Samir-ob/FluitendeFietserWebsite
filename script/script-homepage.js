@@ -3,7 +3,7 @@ function Loaded(){
   //code for open/dicht tijden
 
     //source: chatgpt.com
-    fetch('../texten/welkomsbericht.txt')
+    fetch('/texten/welkomsbericht.txt')
       .then(response => response.text())
       .then(data => {
         document.getElementById("mainText").textContent = data;
