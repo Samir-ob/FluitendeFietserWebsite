@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fluitende Fietser</title>
     <link rel="stylesheet" href="style/style-default.css">
-    <link rel="stylesheet" href="style/style-over-ons.css">
+    <link rel="stylesheet" href="style/style-huurpagina.css">
+    <style>
+        #textbutig{
+            float: right;
+            width: 300px;
+            margin-right: 300px;
+        }
+        #selected_image{
+            margin-left: 50px;
+        }
+    </style>
 </head>
-<body onload="Loaded()">
+<body onload="Onloaded()">
     <header>
         <div class="HeaderContent">
             <h1>Fluitende fietser</h1>
@@ -31,9 +41,29 @@
 
     <h2>Welkom!</h2>
     <main>
-            <img id="image" src="assets/historie1.jpg">
-      
-        <p id="mainText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque, dignissimos, ut distinctio sapiente voluptate nulla modi tenetur pariatur id quisquam corporis maiores nisi earum atque eligendi natus esse velit!</p>
+        <div id="grid">
+            <p>Voer a.u.b uw addressgegevens in:</p>
+            <div id="form">
+                <form>
+                    <label>Naam:</label> <br>
+                    <input type="text"> <br>
+                    <label>Email:</label> <br>
+                    <input type="email"> <br>
+                    <label>stad:</label> <br>
+                    <input type="text"> <br>
+                    <label>postcode: </label> <br>
+                    <input type="text" required> 
+                    <br> <br>
+                    <input type="submit" value="Gegevens versturen" id="submit" onclick="Submit()">
+                </form>
+            </div>
+            <div id="information_preview">
+                <img src="assets/assets-store/Gazelle_CityGo_C7.jpg">
+                <p>Fietsnaam</p>
+                <p>Prijs</p>
+            </div>
+        </div>
+        
     </main>
     <footer>
         <a id="KVK">KVK: 88599665 | BTW NL999888492Z09</a>
@@ -47,6 +77,6 @@
         <a id="TradeMark">&#169; 2022 Fluitende Fietser</a>
        <!-- <img id="bicycle" src="assets/Fluitende fietser.jpg"> -->
     </footer>
-    <script src="script/script-over-ons.js"></script>
+    <script src="script/script-huurpagina.js"></script>
 </body>
 </html>

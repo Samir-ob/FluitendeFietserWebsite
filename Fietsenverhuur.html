@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fluitende Fietser</title>
     <link rel="stylesheet" href="style/style-default.css">
+    <link rel="stylesheet" href="style/style-fietsenverhuur.css">
     <style>
         #textbutig{
             float: right;
@@ -29,20 +30,145 @@
     </header>
     <div class="pagination">
      <a href="index.html">
-    <img id="logo" src="assets/whatdidyouexpect.png">
+    <img id="logo" src="assets/logo.png">
     </a>
     <br>
     <a class="sidebar_button" href="Fietsen.html">Fietsen</a> <br>
     <a class="sidebar_button" href="Fietsenverhuur.html" >Fietsenverhuur</a> <br>
     <a class="sidebar_button" href="contact.html">Contact</a> <br>
     <a class="sidebar_button" href="over-ons.html">Over-ons</a> <br>
+    <a class="sidebar_button" href="Huurpagina.html">TEMP huurpagina</a> <br>
     </div>
 
     <h2>Welkom!</h2>
     <main>
+        <div id="grid">
+            <div id="Choice_grid">
+                <div class="Choice">
+                    <p>
+                        <b style="font-size: 20px;">Fietsnaam</b>
+                        <br>
+                        Huur de fiets
+                        <input type="checkbox" value="1" class="Checkbox" onclick="handleCheckboxSelection(event)">
+                    </p>
+                </div>
+                <div class="Choice-price">
+                    <p>
+                        <p>€euros</p>
+                    </p>
+                </div>
+                <div class="Choice">
+                    <p>
+                        <b style="font-size: 20px;">Fietsnaam</b>
+                        <br>
+                        Huur de fiets
+                        <input type="checkbox" value="2" class="Checkbox" onclick="handleCheckboxSelection(event)">
+                    </p>
+                </div>
+                <div class="Choice-price">
+                    <p>
+                        <p>€euros</p>
+                    </p>
+                </div>
+                <div class="Choice">
+                    <p>
+                        <b style="font-size: 20px;">Fietsnaam</b>
+                        <br>
+                        Huur de fiets
+                        <input type="checkbox" value="3" class="Checkbox" onclick="handleCheckboxSelection(event)">
+                    </p>
+                </div>
+                <div class="Choice-price">
+                    <p>
+                        <p>€euros</p>
+                    </p>
+                </div>
+                <div class="Choice">
+                    <p>
+                        <b style="font-size: 20px;">Fietsnaam</b>
+                        <br>
+                        Huur de fiets
+                        <input type="checkbox" value="4" class="Checkbox" onclick="handleCheckboxSelection(event)">
+                    </p>
+                </div>
+                <div class="Choice-price">
+                    <p>
+                        <p>€euros</p>
+                    </p>
+                </div>
+                <div class="Choice">
+                    <p>
+                        <b style="font-size: 20px;">Fietsnaam</b>
+                        <br>
+                        Huur de fiets
+                        <input type="checkbox" value="5" class="Checkbox" onclick="handleCheckboxSelection(event)">
+                    </p>
+                </div>
+                <div class="Choice-price">
+                    <p>
+                        <p>€euros</p>
+                    </p>
+                </div>
+                <div class="Choice">
+                    <p>
+                        <b style="font-size: 20px;">Fietsnaam</b>
+                        <br>
+                        Huur de fiets
+                        <input type="checkbox" value="6" class="Checkbox" onclick="handleCheckboxSelection(event)">
+                    </p>
+                </div>
+                <div class="Choice-price">
+                    <p>
+                        <p>€euros</p>
+                    </p>
+                </div>
+                <div class="Choice">
+                    <p>
+                        <b style="font-size: 20px;">Fietsnaam</b>
+                        <br>
+                        Huur de fiets
+                        <input type="checkbox" value="7" class="Checkbox" onclick="handleCheckboxSelection(event)">
+                    </p>
+                </div>
+                <div class="Choice-price">
+                    <p>
+                        <p>€euros</p>
+                    </p>
+                </div>
+                <div class="Choice">
+                    <p>
+                        <b style="font-size: 20px;">Fietsnaam</b>
+                        <br>
+                        Huur de fiets
+                        <input type="checkbox" value="8" class="Checkbox" onclick="handleCheckboxSelection(event)">
+                    </p>
+                </div>
+                <div class="Choice-price">
+                    <p>
+                        <p>€euros</p>
+                    </p>
+                </div>
+                <div id="Button">
+                <button onclick="SubmitItems()">
+                    Huur de fietsen
+                </button>
+                </div>
+            </div>
+        </div>
+        <div class="grid_images_1">
+            <img src="assets/fietsen-verhuur/verhuur1.jpg">
+            <img src="assets/fietsen-verhuur/winkel2.jpg">
+        </div>
+
+        <div class="grid_images_2">
+            <img src="assets/fietsen-verhuur/verhuur2.jpg">
+            <img src="assets/fietsen-verhuur/winkel3.jpg">
+        </div>
+
+
+            
         
-        <img id="selected_image" src="assets/assets-store/Gazelle_CityGo_C7.jpg" style="height: 400px; width: 600px;">
-        <p id="textbutig">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet alias fugit non, repellendus nam odio, similique dicta nostrum obcaecati ullam, suscipit corrupti cum praesentium velit eaque in quos fugiat eligendi.</p>
+        
     </main>
     <footer>
         <a id="KVK">KVK: 88599665 | BTW NL999888492Z09</a>
@@ -56,5 +182,6 @@
         <a id="TradeMark">&#169; 2022 Fluitende Fietser</a>
        <!-- <img id="bicycle" src="assets/Fluitende fietser.jpg"> -->
     </footer>
+    <script src="script/script-fietsenverhuur.js"></script>
 </body>
 </html>

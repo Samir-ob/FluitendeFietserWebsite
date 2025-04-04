@@ -70,8 +70,8 @@ main div p{
     animation-duration: 1s;
     background-color: gray;
 }
-.hoverEnd{
-    animation-name: ArrowEffectEnd;
+.hoverEnd{ 
+    animati7on-name: ArrowEffectEnd;
     animation-duration: 1s;
 }
 @keyframes ArrowEffectBegin {
@@ -83,10 +83,18 @@ main div p{
     100% {background-color: transparent;}
 }
 
-.Openingstijden{
-    text-align: left;
-    margin-left: 110px;
-    width: 40vh;
+#Openingstijden{
+    display: grid;
+    grid-template-columns: 50% 30%;
+}
+#Openingstijden_p{
+    grid-column: 1;
+}
+#Open_gesloten{
+    grid-column: 2;
+    font-size: 25px;
+    color: gray;
+
 }
 .open{
     color: gray;

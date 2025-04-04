@@ -1,6 +1,7 @@
 function Loaded(){
 
   //code for open/dicht tijden
+  
 
     //source: chatgpt.com
     fetch('texten/welkomsbericht.txt')
@@ -74,7 +75,7 @@ function showSlides() {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   
-  slides[slideIndex].style.display = "block";  
+  slides[slideIndex].style.display = "block";
   dots[slideIndex].className += " active";
 }
 
