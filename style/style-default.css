@@ -99,22 +99,30 @@ footer{
 #TradeMark{
     text-align: center;
 }
-/* source: https://stackoverflow.com/questions/41587802/css-animation-from-left-to-right */
 #bicycle {
-    bottom: 0%;
     position: absolute;
-    animation: linear infinite;
-    animation-name: run;
-    animation-duration: 4s;
-  }
-  @keyframes run {
+    width: 100px;
+    left: 20%; /* start after the sidebar */
+    transform: translateY(-50%);
+    animation: ride 6s linear infinite;
+}
+
+@keyframes ride {
     0% {
-      left: 0;
+        right: 3%;
+        left: 13%;
+        transform: scaleX(1) translateY(-50%) translateX(0);
     }
     50% {
-      left: ;
+        left: calc(100vw - 120px); /* give a buffer */
+        transform: scaleX(1) translateY(-50%) translateX(0);
+    }
+    50.01% {
+        transform: scaleX(-1) translateY(-50%) translateX(0);
     }
     100% {
-        left: 100%;
+        right: 3%;
+        left: 13%;
+        transform: scaleX(-1) translateY(-50%) translateX(0);
     }
-  }
+}

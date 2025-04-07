@@ -32,55 +32,56 @@
 
     <h2>Welkom!</h2>
     <main>
-        <div class="MainDivs" id="div_Adress">
-            <p>
+       <div id="Grid">
+            <p id="item_1">
                 Adress: <br>
-                info@fluitendefietser.nl
+                Papenvoortse Heide 7, 5674 SL Nuenen
             </p>
-        </div>
-        <div class="MainDivs" id="div_Contact">
-            <p>
+            <p id="item_2">
                 Contact: <br>
-                info@fluitendefietser <br>
-                o6-248923679
+                info@fluitendefietser.nl <br>
+                06-248923679
             </p>
-        </div>
-        <div class="MainDivs" id="div_Openingstijden">
-            <p>Openingstijden</p>
-        </div>
-
-        <div id="div_Location">
+            <p id="item_3">
+                Openingstijden: <br>
+                Ma: 10:00 - 19:00 -  Vr: Gesloten
+                <br>
+                Di: 10:00 - 19:00 -    Za: 10:00 - 19:00
+                <br>
+                Woe: 10:00 - 19:00 - Zo: 10:00 - 19:00
+                <br>
+                Do: 10:00 - 19:00
+                <br>
+            </p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2485.123412133833!2d5.592988075786884!3d51.47424897180582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTHCsDI4JzI3LjMiTiA1wrAzNSc0NC4wIkU!5e0!3m2!1snl!2snl!4v1743766185623!5m2!1snl!2snl" width="100%" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="form_container">
+                <form>
+                    <label id="contact-ons">contact ons:</label>
+                    <div class="voornaam">
+                        <label>Voornaam:</label>
+                        <input type="text">
+                    </div>
+                
+                    <div class="achternaam">
+                        <label>Achternaam:</label>
+                        <input type="text">
+                    </div>
+                
+                    <div class="email">
+                        <label >EmailAdress:</label>
+                        <input type="email" required>
+                    </div>
+                
+                    <div class="bericht">  
+                        <label>Uw bericht:</label>
+                        <input id="bericht-input" type="text">
+                    </div>
+                    <input class="submit" type="submit">
+                </form>
+                
         </div>
 
-        <div class="MainDivs" id="div_Form">
-            <p>Contact ons:</p>
-            <form>
-                <div class="form-row">
-                    <label>Voornaam:</label>
-                    <input class="Input" type="text">
-                </div>
-            
-                <div class="form-row">
-                    <label>Achternaam:</label>
-                    <input class="Input" id="Achternaam_input" type="text">
-                </div>
-            
-                <div class="form-row">
-                    <label>EmailAdress:</label>
-                    <input class="Input" id="Email" type="email" required>
-                </div>
-            
-                <div class="form-row">
-                    <label>Uw bericht:</label>
-                    <input class="Input" id="Bericht_input" type="text">
-                </div>
-                <input class="Input" type="submit">
-            </form>
-            
-        </div>
-
-        
+       </div>
     </main>
     <footer>
         <a id="KVK">KVK: 88599665 | BTW NL999888492Z09</a>
@@ -92,7 +93,7 @@
         <a href="mailto:info@fluitendefietser.nl">info@fluitendefietser.nl</a>
         </div>
         <a id="TradeMark">&#169; 2022 Fluitende Fietser</a>
-       <!-- <img id="bicycle" src="assets/Fluitende fietser.jpg"> -->
+        <img id="bicycle" src="assets/fietser.png"> 
     </footer>
 </body>
 </html>

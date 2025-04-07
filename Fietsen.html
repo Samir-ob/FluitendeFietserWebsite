@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <div class="HeaderContent">
+        <div class=" HeaderContent">
             <h1>Fluitende fietser</h1>
             <div id="headerSearchBar">
                 <img id="headerSearchBarImage" src="assets/search.png">
@@ -34,104 +34,110 @@
 
     <h2>Welkom!</h2>
     <main id="Main">
+
         <div id="store_content">
+            <div id="shopping_cart_container">
+                <a href="winkelwagen.html">
+                    <img src="assets/shopping_cart.png" alt="Shopping Cart" id="shopping_cart">
+                </a>
+            </div>
             <div style="display: flex; flex-direction: row;  max-height: 25vh">
-                <div class="container" onclick="showProductDetails('Gazelle Orange', 'assets/assets-store/Gazelle_Orange_C7.jpg', 'Een geweldige fiets!')">
+                <div class="container" onclick="showProductDetails('Gazelle Orange', 'assets/assets-store/Gazelle_Orange_C7.jpg', 'fietscode: 1\nfietsnaam: Pelikaan Carry On Lady\naandrijvingstype: elektrisch\naanbod: geschikt voor zakelijk en prive\ngeslacht: dames\ntype: transport\nmerk: Pelikaan\nstaat: nieuw\nprijs: 769,00\nopmerkingen: 28 Inch 53 cm 3V V-Brakes\n', 'grijs', 300)">
                     <img class="store-image" src="assets/assets-store/Gazelle_Orange_C7.jpg" alt="Afbeelding product 1"
                         class="image">
                     <div class="text">
                         <p>Gazelle Orange
                             <br>
-                            kleur
+                            kleur: grijs
                             <br>
-                            prijs
+                            €300
                         </p>
                     </div>
                 </div>
-                <div class="container" onclick="showProductDetails('Pilikaan Carry On Lady', 'assets/assets-store/Pelikaan_Carry_On_Lady.jpg', ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis possimus laudantium asperiores facilis impedit maxime repellendus. Sapiente, odit magnam expedita eaque pariatur corrupti delectus ut beatae consectetur, aliquid molestias. Quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem excepturi nam officia doloremque possimus voluptatibus laborum quasi perferendis odit accusamus aspernatur ullam adipisci ducimus, delectus, repellendus illo maiores dolorum natus?')">
+                <div class="container" onclick="showProductDetails('Pilikaan Carry On Lady', 'assets/assets-store/Pelikaan_Carry_On_Lady.jpg', 'fietscode: 4\nfietsnaam: Gazelle CityGo C7\naandrijvingstype: niet elektrisch\naanbod: geschikt voor zakelijk en prive\ngeslacht: heren\ntype: stads\nmerk: Gazelle\nstaat: nieuw\nprijs: 679,00\nopmerkingen: wielmaat 28 inches\n', 'zwart', '200')">
                     <img class="store-image" src="assets/assets-store/Pelikaan_Carry_On_Lady.jpg" alt="Afbeelding product 2"
                         class="image">
                     <div class="text">
                         <p>Pilikaan Carry On Lady
                             <br>
-                            kleur
+                            kleur: zwart
                             <br>
-                            prijs
+                            €200
                         </p>
                     </div>
                 </div>
-                <div class="container" onclick="showProductDetails('Stella Allergra', 'assets/assets-store/Stella_Allegra_voorwielmotor.jpg', ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis possimus laudantium asperiores facilis impedit maxime repellendus. Sapiente, odit magnam expedita eaque pariatur corrupti delectus ut beatae consectetur, aliquid molestias. Quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem excepturi nam officia doloremque possimus voluptatibus laborum quasi perferendis odit accusamus aspernatur ullam adipisci ducimus, delectus, repellendus illo maiores dolorum natus?')">
+                <div class="container" onclick="showProductDetails('Stella Allergra', 'assets/assets-store/Stella_Allegra_voorwielmotor.jpg', 'fietscode: 2\nfietsnaam: Allegra voorwielmotor\naandrijvingstype: elektrisch\naanbod: geschikt voor zakelijk en prive\ngeslacht: dames\ntype: stads\nmerk: Stella\nstaat: nieuw\nprijs: 999,00\nopmerkingen: frameraat S (Lichaamslengte 1,62m - 1,73m)\n', 'wit', '250')">
                     <img class="store-image" src="assets/assets-store/Stella_Allegra_voorwielmotor.jpg" alt="Afbeelding product 3"
                         class="image">
                     <div class="text">
                         <p>Stella Allergra
                             <br>
-                            kleur
+                            kleur: wit
                             <br>
-                            prijs
+                            €250
                         </p>
                     </div>
                 </div>
-                <div class="container" onclick="showProductDetails('Gazelle_CityGo_C7', 'assets/assets-store/Gazelle_CityGo_C7.jpg', ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis possimus laudantium asperiores facilis impedit maxime repellendus. Sapiente, odit magnam expedita eaque pariatur corrupti delectus ut beatae consectetur, aliquid molestias. Quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem excepturi nam officia doloremque possimus voluptatibus laborum quasi perferendis odit accusamus aspernatur ullam adipisci ducimus, delectus, repellendus illo maiores dolorum natus?')">
+                <div class="container" onclick="showProductDetails('Gazelle_CityGo_C7', 'assets/assets-store/Gazelle_CityGo_C7.jpg', ' fietscode: 3\nfietsnaam: Gazelle Orange C7+ HMB 2020\naandrijvingstype: elektrisch\naanbod: geschikt voor zakelijk en prive\ngeslacht: heren\ntype: stads\nmerk: Gazelle\nstaat: nieuw\nprijs: 2199,00\nopmerkingen: frameraat 53cm(1.66cm-1.77cm)\n', 'grijs', '345')">
                     <img class="store-image" src="assets/assets-store/Gazelle_CityGo_C7.jpg" alt="Afbeelding product 4"
                         class="image">
                     <div class="text">
                         <p>Gazelle_CityGo_C7
                             <br>
-                            kleur
+                            kleur: grijs
                             <br>
-                            prijs
+                            €345
                         </p>
                     </div>
                 </div>
             </div>
             <br>
             <div id="store_container" style="display: flex; flex-direction: row; max-height: 25vh;">
-                <div class="container" onclick="showProductDetails('Gazelle_CityGo_C7', 'assets/assets-store/Gazelle_CityGo_C7.jpg', ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis possimus laudantium asperiores facilis impedit maxime repellendus. Sapiente, odit magnam expedita eaque pariatur corrupti delectus ut beatae consectetur, aliquid molestias. Quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem excepturi nam officia doloremque possimus voluptatibus laborum quasi perferendis odit accusamus aspernatur ullam adipisci ducimus, delectus, repellendus illo maiores dolorum natus?')">
-                    <img class="store-image" src="assets/assets-store/Gazelle_CityGo_C7.jpg" alt="Afbeelding product 5"
+                <div class="container" onclick="showProductDetails('Gazelle Orange', 'assets/assets-store/Gazelle_Orange_C7.jpg', 'fietscode: 1\nfietsnaam: Pelikaan Carry On Lady\naandrijvingstype: elektrisch\naanbod: geschikt voor zakelijk en prive\ngeslacht: dames\ntype: transport\nmerk: Pelikaan\nstaat: nieuw\nkleur: zwart\nprijs: 769,00\nopmerkingen: 28 Inch 53 cm 3V V-Brakes\n', 'grijs', 300)">
+                    <img class="store-image" src="assets/assets-store/Gazelle_Orange_C7.jpg" alt="Afbeelding product 1"
                         class="image">
                     <div class="text">
-                        <p>Gazelle_CityGo_C7
+                        <p>Gazelle Orange
                             <br>
-                            kleur
+                            kleur: grijs
                             <br>
-                            prijs
+                            €300
                         </p>
                     </div>
                 </div>
-                <div class="container" onclick="showProductDetails('Gazelle_CityGo_C7', 'assets/assets-store/Gazelle_CityGo_C7.jpg', ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis possimus laudantium asperiores facilis impedit maxime repellendus. Sapiente, odit magnam expedita eaque pariatur corrupti delectus ut beatae consectetur, aliquid molestias. Quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem excepturi nam officia doloremque possimus voluptatibus laborum quasi perferendis odit accusamus aspernatur ullam adipisci ducimus, delectus, repellendus illo maiores dolorum natus?')">
-                    <img class="store-image" src="assets/assets-store/Gazelle_CityGo_C7.jpg" alt="Afbeelding product 6"
+                <div class="container" onclick="showProductDetails('Pilikaan Carry On Lady', 'assets/assets-store/Pelikaan_Carry_On_Lady.jpg', 'fietscode: 4\nfietsnaam: Gazelle CityGo C7\naandrijvingstype: niet elektrisch\naanbod: geschikt voor zakelijk en prive\ngeslacht: heren\ntype: stads\nmerk: Gazelle\nstaat: nieuw\nkleur: meerdere\nprijs: 679,00\nopmerkingen: wielmaat 28 inches\n', 'zwart', '200')">
+                    <img class="store-image" src="assets/assets-store/Pelikaan_Carry_On_Lady.jpg" alt="Afbeelding product 2"
                         class="image">
                     <div class="text">
-                        <p>Gazelle_CityGo_C7
+                        <p>Pilikaan Carry On Lady
                             <br>
-                            kleur
+                            kleur: zwart
                             <br>
-                            prijs
+                            €200
                         </p>
                     </div>
                 </div>
-                <div class="container" onclick="showProductDetails('Gazelle_CityGo_C7', 'assets/assets-store/Gazelle_CityGo_C7.jpg', ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis possimus laudantium asperiores facilis impedit maxime repellendus. Sapiente, odit magnam expedita eaque pariatur corrupti delectus ut beatae consectetur, aliquid molestias. Quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem excepturi nam officia doloremque possimus voluptatibus laborum quasi perferendis odit accusamus aspernatur ullam adipisci ducimus, delectus, repellendus illo maiores dolorum natus?')">
-                    <img class="store-image" src="assets/assets-store/Gazelle_CityGo_C7.jpg" alt="Afbeelding product 7"
+                <div class="container" onclick="showProductDetails('Stella Allergra', 'assets/assets-store/Stella_Allegra_voorwielmotor.jpg', 'fietscode: 2\nfietsnaam: Allegra voorwielmotor\naandrijvingstype: elektrisch\naanbod: geschikt voor zakelijk en prive\ngeslacht: dames\ntype: stads\nmerk: Stella\nstaat: nieuw\nkleur: zwart\nprijs: 999,00\nopmerkingen: frameraat S (Lichaamslengte 1,62m - 1,73m)\n', 'wit', '250')">
+                    <img class="store-image" src="assets/assets-store/Stella_Allegra_voorwielmotor.jpg" alt="Afbeelding product 3"
                         class="image">
                     <div class="text">
-                        <p>Gazelle_CityGo_C7
+                        <p>Stella Allergra
                             <br>
-                            kleur
+                            kleur: wit
                             <br>
-                            prijs
+                            €250
                         </p>
                     </div>
                 </div>
-                <div class="container" onclick="showProductDetails('Gazelle_CityGo_C7', 'assets/assets-store/Gazelle_CityGo_C7.jpg', ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis possimus laudantium asperiores facilis impedit maxime repellendus. Sapiente, odit magnam expedita eaque pariatur corrupti delectus ut beatae consectetur, aliquid molestias. Quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem excepturi nam officia doloremque possimus voluptatibus laborum quasi perferendis odit accusamus aspernatur ullam adipisci ducimus, delectus, repellendus illo maiores dolorum natus?')">
-                    <img class="store-image" src="assets/assets-store/Gazelle_CityGo_C7.jpg" alt="Afbeelding product 8"
+                <div class="container" onclick="showProductDetails('Gazelle_CityGo_C7', 'assets/assets-store/Gazelle_CityGo_C7.jpg', ' fietscode: 3\nfietsnaam: Gazelle Orange C7+ HMB 2020\naandrijvingstype: elektrisch\naanbod: geschikt voor zakelijk en prive\ngeslacht: heren\ntype: stads\nmerk: Gazelle\nstaat: nieuw\nkleur: Blauw\nprijs: 2199,00\nopmerkingen: frameraat 53cm(1.66cm-1.77cm)\n', 'grijs', '345')">
+                    <img class="store-image" src="assets/assets-store/Gazelle_CityGo_C7.jpg" alt="Afbeelding product 4"
                         class="image">
                     <div class="text">
                         <p>Gazelle_CityGo_C7
                             <br>
-                            kleur
+                            kleur: grijs
                             <br>
-                            prijs
+                            €345
                         </p>
                     </div>
                 </div>
@@ -148,7 +154,7 @@
             <a href="mailto:info@fluitendefietser.nl">info@fluitendefietser.nl</a>
         </div>
         <a id="TradeMark">&#169; 2022 Fluitende Fietser</a>
-        <!-- <img id="bicycle" src="assets/Fluitende fietser.jpg"> -->
+        <img id="bicycle" src="assets/fietser.png"> 
     </footer>
     <script src="script/script-fietsen.js"></script>
 </body>

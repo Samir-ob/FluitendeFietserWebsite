@@ -1,95 +1,110 @@
-main{
+#Grid{
     display: grid;
-    grid-template-columns: repeat(3, 33vh);
-    min-width: 130px;
-    
+    grid-template-columns: repeat(3, 57vh);
+    grid-template-rows: 40%, 30%, 40%;
+    width: 50vh;
+    height: 60vh;
 }
-
-.MainDivs{
-    background-color: rgb(40, 42, 100);
-    width: 300px;
-    height: 100px;
-    min-width: 300px;
-    margin-top: -10px;
-    color: white;
-    padding-left: 15px;
-    padding-top: 1px;
-    font-size: large;
-    
-    
+#Grid > p{
+    font-size: clamp(5px, 2vh, 20px);
 }
-#div_Adress{
+#item_1{
     grid-column: 1;
-    margin-left: 70px;
-}
-#div_Contact{
-    grid-column-start: 2;
-    grid-column-end: 2;
-    margin-left: 300px;
-}
-#div_Openingstijden{
-    grid-column: 3;
-    margin-left: 500px;
-}
-#div_Location{
+    height: 60%;
+    width: 70%;
     background-color: rgb(40, 42, 100);
-    width: 167vh;
-    height: 100px;
-    max-height: 100px;
+    justify-self: center; /* justify-self is used to center this individual item within a grid */
     color: white;
-    font-size: large;
-    
-    grid-column-start: 1;
-    grid-column-end: 3;
-    margin-left: 70px;
-    margin-top: 0px;
-}
-
-#div_Form {
-    grid-column: 1;
-    margin-top: 0px;
-    margin-left: 70px;
-    height: 200px;
-    width: 167vh;
-}
-
-#Achternaam{
-    margin-left: 100px;
-}
-#Achternaam_input{
-    margin-left: 10px;
-}
-#Bericht{
-    margin-left: 80px;
-}
-#Bericht_input{
-    margin-left: 10px;
-    height: 40px;
-}
-#Email{
-    top: 10px;
-}
-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 10px; /* Space between rows */
-    width: 100%; /* Ensures it stretches properly */
-}
-
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 3fr; 
-    align-items: center;
-    gap: 10px;
-}
-
-.Input {
-    width: 60%; /* Ensures input fills space */
     padding: 5px;
-    font-size: 14px;
 }
+#item_2{
+    grid-column: 2;
+    height: 56%;
+    width: 70%;
+    background-color: rgb(40, 42, 100);
+    justify-self: center; 
+    color: white;
+    padding: 5px;
+}
+#item_3{
+    grid-column: 3;
+    height: 60%;
+    width: 70%;
+    background-color: rgb(40, 42, 100);
+    justify-self: center; 
+    color: white;
+    padding: 5px;
+}
+iframe{
+    grid-column: span 3;
+    justify-self: center;
+    width: 90%;
+    height: 50%;
+    align-self: center;
+    margin-bottom: 35px;
+}
+#form_container{
+    grid-column: 1 / span 3;
+}
+form{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto auto auto auto;
+    background-color: rgb(40, 42, 100);
+    height: 100%;
+    width: 90%;
+    justify-self: center;
+    color: white;
+}
+#contact-ons{
+    padding-top: 15px;
+    margin-left: 40px;
+}
+.voornaam{
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 40px;
+}
+.voornaam > input{
+    margin-left: 100px;
+    width: 300px;
+    height: 20px;
+}
+.achternaam{
+    grid-column: 2;
+    grid-row: 2;
+}
+.achternaam > input{
+    margin-left: 100px;
+    width: 300px;
+    height: 20px;
+}
+.email{
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 40px;
+}
+.email > input{
+    margin-left: 82.5px;
+    width: 300px;
+    height: 20px;
+}
+.bericht{
+    grid-row: 3;
+    grid-column: 2;
 
-#Bericht_input {
+}
+.bericht > input{
+    margin-left: 107px;
+    width: 300px;
+}
+.submit{
+    grid-row: 4;
+    grid-column: 1;
+    width: 400px;
+    margin-left: 40px;
+    height: 30px;
+}
+#bericht-input{
     height: 40px;
-    resize: vertical;
 }

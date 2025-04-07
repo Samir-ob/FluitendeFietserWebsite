@@ -105,3 +105,49 @@ main{
   max-width: 300px;
   margin-right: 300px;
 }
+#return{
+  display: block;
+  max-width: 12px;
+  margin-top: 170px;
+  font-size: 60px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#store_content {
+  margin-top: 50px;
+  margin-left: 100px;
+  position: relative; /* To position the cart relative to this container */
+}
+
+/* start shopping cart Fietsen page */
+#shopping_cart_container {
+  position: absolute; /* Absolute positioning within the parent container */
+  top: 20px; 
+  right: 20px;
+  z-index: 10; 
+}
+
+#shopping_cart {
+  width: 60px;
+  cursor: pointer; 
+}
+/* end shopping cart Fietsen page */
+
+/* start shopping cart Item page */
+#shopping_cart_container_item {
+  position: fixed; /* Fix the position relative to the viewport */
+  top: 16vh; /* Distance from the top of the screen */
+  right: 20px; /* Distance from the right of the screen */
+  z-index: 10; /* Ensure the cart appears above other content */
+}
+
+#shopping_cart_item {
+  width: 60px; /* Set the width of the shopping cart icon */
+  cursor: pointer; /* Make it clickable */
+}
+/* end shopping cart Item page */
+#add_btn{
+  width: 100%;
+  background-color: rgb(173, 216, 230);
+}

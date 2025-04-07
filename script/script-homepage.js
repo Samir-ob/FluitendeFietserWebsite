@@ -1,7 +1,27 @@
 function Loaded(){
 
-  //code for open/dicht tijden
+  //code for open/dicht tijden. inspired by code from chatgpt
   
+  const hours = {
+    "Maandag": [10, 19],
+    "Dinsdag": [10, 19],
+    "Woensdag": [10, 19],
+    "Donderdag": [10, 19],
+    "Vrijdag": null,
+    "Zaterdag": [10, 19],
+    "Zondag": [10, 19]
+  };
+
+  const today = new Date(); // represents the current date and time
+  const dayNames = ["Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag"];
+  const currentDay = dayNames[today.getDay()]; //gets the current day
+
+  const storeHours = hours[currentDay];
+  const currentHour = today.getHours();
+
+  const isOpen = storeHours && currentHour >= storeHours[0] && currentHour < storeHours[1];
+
+  document.getElementById("Open_gesloten").textContent = isOpen ? "Open" : "Gesloten";
 
     //source: chatgpt.com
     fetch('texten/welkomsbericht.txt')

@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fluitende Fietser</title>
     <link rel="stylesheet" href="style/style-default.css">
-    <link rel="stylesheet" href="style/style-over-ons.css">
+    <link rel="stylesheet" href="style/style-winkelwagen.css">
+
 </head>
-<body onload="Loaded()">
+<body onload="loadProductsFromSession()">
     <header>
         <div class="HeaderContent">
             <h1>Fluitende fietser</h1>
@@ -31,10 +32,13 @@
     </div>
 
     <h2>Welkom!</h2>
-    <main>
-            <img id="image" src="assets/historie1.jpg">
-      
-        <p id="mainText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque, dignissimos, ut distinctio sapiente voluptate nulla modi tenetur pariatur id quisquam corporis maiores nisi earum atque eligendi natus esse velit!</p>
+    <main id="Main">
+        <div id="store_content">
+            <div class="product-list">
+
+            
+            <br>
+        </div>
     </main>
     <footer>
         <a id="KVK">KVK: 88599665 | BTW NL999888492Z09</a>
@@ -48,6 +52,6 @@
         <a id="TradeMark">&#169; 2022 Fluitende Fietser</a>
         <img id="bicycle" src="assets/fietser.png"> 
     </footer>
-    <script src="script/script-over-ons.js"></script>
+    <script src="script/script-winkelwagen.js"></script>
 </body>
 </html>
